@@ -236,7 +236,7 @@ p {
   display: inline-block;
   font-size: 1em;
   background: whitesmoke;
-  padding: 20px 30px;
+  padding: 20px 63px;
   text-decoration: none;
   color: #111;
   text-transform: uppercase;
@@ -278,6 +278,14 @@ p {
 
 .text2 h2 p {
   position: absolute;
+}
+
+.text2 p {
+  margin-bottom: 15%;
+}
+
+.text2 li {
+  color: whitesmoke;
 }
 
 @media (max-width: 1000px) {
