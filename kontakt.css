@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* til input med alle der har de specifikke type*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  /* resize: vertical; */
+}
+
+/* til input med alle der har type=submit */
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #474747;
+}
+
+#placering {
+  grid-column-start: 2;
+  /* grid-row-start: 2; */
+}
+#placering img {
+  max-width: 100%;
+  height: auto;
+}
+
+#placering p {
+  font-size: 0.7rem;
+}
+
+form {
+  /* grid-row: 1 / span 2; */
+  grid-column: 1;
+  padding-bottom: 1rem;
+}
+
+.kontaktcontainer {
+  margin-inline: 5vw;
+  margin-block: 3rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.kontaktcontainer p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.kontaktcontainer img {
+  padding-bottom: 0.5rem;
+}
+.kontaktcontainer h3 {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .kontaktcontainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-rows: 0.2fr 0.2fr; */
+    gap: 20px;
+  }
+}
+
+/* @media (min-width: 800px) {
+  #placering {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+} */
+
+.splashie {
+  height: 25vw;
+  width: 100%;
+  background-image: url(authree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* for text below */
+  text-align: center;
+  padding: 150px 0;
+  font-size: 2rem;
+  color: rgb(251, 255, 27);
+}
+
+@media (min-width: 800px) {
+  .splashie {
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #696969;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(billeder/kontor.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 5%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul li a:hover {
+  color: grey;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: row;
+  color: #b44371;
+  margin: 5rem auto;
+  width: min(93%, 75rem);
+  justify-content: right;
+  gap: 3em;
+}
+
+.col {
+  flex-basis: 90%;
+  align-items: center;
+}
+
+h1 {
+  color: rgba(245, 245, 245, 0.664);
+  font-size: 70px;
+  font-family: Anton;
+}
+
+h2 {
+  color: rgba(245, 245, 245, 0.664);
+  font-size: 30px;
+  font-family: Anton;
+}
+
+.paragraph {
+  display: grid;
+  grid-auto-flow: row;
+  color: #b44371;
+  margin-left: 15%;
+  margin-top: 15%;
+  width: min(20%, 75rem);
+}
+
+p {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .paragraph {
+    width: min(50%, 75rem);
+    place-content: end-center;
+  }
+}
+
+@media (max-width: 600px) {
+  .paragraph {
+    width: min(70%, 75rem);
+    place-content: end-center;
+  }
+}
+
+.indhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .indhold {
+    grid-template-columns: 1fr;
+  }
+}
+
+.billede img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.billede {
+  position: relative;
+  text-align: center;
+}
+
+.text3 {
+  position: absolute;
+  bottom: 25px;
+  padding: 10rem;
+}
+
+.text3 p {
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .text3 {
+    position: absolute;
+    bottom: 70px;
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text3 {
+    position: absolute;
+    bottom: 70px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .text3 {
+    position: absolute;
+    bottom: 70px;
+    padding: 8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .text3 {
+    position: absolute;
+    bottom: 50px;
+    padding: 3rem;
+  }
+}
+
+.overskrift h2 {
+  color: whitesmoke;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.overskrift {
+  text-align: center;
+}
+
+.kolonne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.kolonne img {
+  border-radius: 7%;
+  box-shadow: 5px 5px 20px;
+}
+
+@media (max-width: 800px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.kolonne .div1:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row1 a {
+  display: inline-block;
+  font-size: 1em;
+  background: whitesmoke;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 5px 5px 20px;
+  align-items: center;
+  grid-column: 2/3;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.row1 a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.div1 {
+  position: relative;
+  text-align: center;
+}
+
+.text1 p {
+  color: black;
+}
+
+.text1 {
+  position: absolute;
+  bottom: -3px;
+  padding: 1rem;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10%;
+  gap: 5%;
+}
+
+.text2 h2 p {
+  position: absolute;
+}
+
+@media (max-width: 1000px) {
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+}
