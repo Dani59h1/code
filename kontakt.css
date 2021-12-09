@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #696969;
 }
 
 * {
@@ -98,7 +98,7 @@ form {
 .splashie {
   height: 25vw;
   width: 100%;
-  background-image: url(authree.jpg);
+  background-image: url(/billeder/authree.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* for text below */
