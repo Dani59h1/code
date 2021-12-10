@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #696969;
 }
 
 * {
@@ -58,7 +58,7 @@ form {
 }
 
 .kontaktcontainer {
-  margin-inline: 5vw;
+  margin-inline: 5rem;
   margin-block: 3rem;
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -96,20 +96,21 @@ form {
 } */
 
 .splashie {
+  /* vw to adjust the size of splash picture according to size */
   height: 25vw;
   width: 100%;
-  background-image: url(authree.jpg);
+  background-image: url(/billeder/authree.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* for text below */
   text-align: center;
-  padding: 150px 0;
+  padding: 100px 0;
   font-size: 2rem;
   color: rgb(251, 255, 27);
 }
 
 @media (min-width: 800px) {
   .splashie {
-    font-size: 4vw;
+    font-size: 4rem;
   }
 }

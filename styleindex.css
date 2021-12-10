@@ -104,29 +104,9 @@ p {
   font-size: 14px;
 }
 
-@media (max-width: 900px) {
-  .paragraph {
-    width: min(50%, 75rem);
-    place-content: end-center;
-  }
-}
-
-@media (max-width: 600px) {
-  .paragraph {
-    width: min(70%, 75rem);
-    place-content: end-center;
-  }
-}
-
 .indhold {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width: 800px) {
-  .indhold {
-    grid-template-columns: 1fr;
-  }
 }
 
 .billede img {
@@ -150,38 +130,6 @@ p {
   color: black;
 }
 
-@media (max-width: 1200px) {
-  .text3 {
-    position: absolute;
-    bottom: 70px;
-    padding: 5rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .text3 {
-    position: absolute;
-    bottom: 70px;
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .text3 {
-    position: absolute;
-    bottom: 70px;
-    padding: 8rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .text3 {
-    position: absolute;
-    bottom: 50px;
-    padding: 3rem;
-  }
-}
-
 .overskrift h2 {
   color: whitesmoke;
   margin-top: 6%;
@@ -194,10 +142,10 @@ p {
 
 .kolonne {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 3%;
   margin-top: 3%;
 }
@@ -205,20 +153,6 @@ p {
 .kolonne img {
   border-radius: 7%;
   box-shadow: 5px 5px 20px;
-}
-
-@media (max-width: 800px) {
-  .kolonne {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 500px) {
-  .kolonne {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
 
 .kolonne .div1:hover {
@@ -232,23 +166,18 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.row1 a {
-  display: inline-block;
+.row1 button {
   font-size: 1em;
   background: whitesmoke;
-  padding: 20px 30px;
-  text-decoration: none;
-  color: #111;
+  padding: 20px 63px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   box-shadow: 5px 5px 20px;
-  align-items: center;
   grid-column: 2/3;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.row1 a:hover {
+.row1 button:hover {
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
@@ -280,8 +209,95 @@ p {
   position: absolute;
 }
 
+.text2 p {
+  margin-bottom: 15%;
+}
+
+.text2 li {
+  color: whitesmoke;
+}
+
+@media (max-width: 1200px) {
+  .text3 {
+    position: absolute;
+    bottom: 70px;
+    padding: 5rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .container2 {
     grid-template-columns: 1fr;
+  }
+  .text2 p {
+    margin-bottom: 5%;
+  }
+
+  .row1 {
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .text3 {
+    position: absolute;
+    bottom: 70px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .paragraph {
+    width: min(50%, 75rem);
+    place-content: end-center;
+  }
+}
+
+@media (max-width: 800px) {
+  .text3 {
+    position: absolute;
+    bottom: 70px;
+    padding: 8rem;
+  }
+
+  .indhold {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .text2 p {
+    margin-bottom: 15%;
+  }
+  .row1 {
+    margin-top: 30%;
+    margin-left: 0%;
+    margin-right: 15%;
+    padding: 10px px;
+  }
+
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2%;
+  }
+
+  .text3 {
+    position: absolute;
+    bottom: 50px;
+    padding: 3rem;
+  }
+
+  .paragraph {
+    width: min(70%, 75rem);
+    place-content: end-center;
   }
 }
