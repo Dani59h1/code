@@ -1,0 +1,17 @@
+p {
+  font-family: Helvetica;
+  font-size: 0.9rem;
+  line-height: 140%;
+}
+
+h1 {
+  color: rgba(245, 245, 245, 0.664);
+  font-size: 70px;
+  font-family: Anton;
+}
+
+h2 {
+  color: rgba(245, 245, 245, 0.664);
+  font-size: 30px;
+  font-family: Anton;
+}
