@@ -1,5 +1,5 @@
 body {
-  background-color: #696969;
+  background-color: #e6e7ed;
 }
 
 * {
@@ -25,7 +25,7 @@ textarea {
 }
 
 /* til input med alle der har type=submit */
-input[type="submit"] {
+/* input[type="submit"] {
   background-color: #000000;
   color: white;
   padding: 12px 20px;
@@ -36,7 +36,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #474747;
-}
+} */
 
 #placering {
   grid-column-start: 2;
@@ -61,7 +61,7 @@ form {
   margin-inline: 5rem;
   margin-block: 3rem;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #a5a5a5;
   padding: 1rem;
 }
 
@@ -119,5 +119,266 @@ form {
     font-size: 4rem;
     height: 15rem;
     width: 100%;
+  }
+}
+
+/* _________BURGER MENU__________________ */
+
+.navbar {
+  /* height: 12%; */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #696969;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 40px;
+  cursor: pointer;
+  margin-block: 0.2rem;
+  margin-left: 1rem;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 5%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul li a:hover {
+  /* color: grey; */
+  color: rgb(255, 210, 29);
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+/* burgermenu center og under hinanden */
+.menu {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: right; */
+  float: right;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+/* .nav-link:hover {
+  color: #482ff7;
+} */
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+/* -------media------ */
+
+@media only screen and (max-width: 768px) {
+  /* Burgermenuen, farve, placering */
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 3.9rem;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    font-size: 2rem;
+  }
+
+  /* hvid streg i bunden når der er burgermenu størrelse */
+  /* .navbar {
+    border-bottom: 1px solid rgb(159, 159, 159);
+  } */
+
+  /* Placering af menu når man åbner burgermenu */
+  .menu.active {
+    left: 0;
+  }
+
+  /* Margin imellem tekst i åben burgermenu */
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  /* Viser de tre streger og at man kan trykke på dem */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    /* background-color: rgb(181, 181, 181); */
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 5px;
+  }
+
+  /* Transition af de tre streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center top;
+  /* gap: 10px; */
+  background-color: white;
+  /* position: fixed;
+  left: 0px;
+  bottom: 0px; */
+}
+
+.item7 {
+  grid-column: 1/2;
+  margin-left: 10%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.item7 img {
+  width: 50%;
+  max-width: 150px;
+}
+
+.item7 h3 {
+  font-size: 0.7rem;
+}
+
+.item8 {
+  grid-column: 2/3;
+  text-align: center;
+  margin-top: 2rem;
+  /* margin-bottom: 10%; */
+}
+
+.item8 h3 {
+  font-size: 0.7rem;
+  margin: 2px;
+}
+
+.item9 {
+  font-family: "Ubuntu";
+  grid-column: 3/4;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  /* margin-right: 0rem; */
+}
+
+.item9 h3 {
+  font-size: 0.7rem;
+}
+
+.item9 input {
+  width: 80%;
+}
+
+.container input {
+  margin: 0.1rem;
+  font-family: ubuntu;
+  cursor: pointer;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #474747;
+}
+
+.container p {
+  font-family: ubuntu;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .item7 h3 {
+    font-size: 0.4rem;
+  }
+
+  /* .item7 img {
+   width: 100%;
+  }  */
+
+  .item8 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item8 {
+    margin-left: -15%;
+  }
+
+  .item9 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item9 {
+    margin-left: 0%;
+  }
+
+  .container p {
+    font-size: 0.4rem;
+  }
+
+  .container input {
+    font-size: 0.4rem;
+    padding: 5px;
+  }
+
+  .item2 {
+    margin-left: 0%;
   }
 }
