@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styleindex.css" />
-    <link rel="stylesheet" href="faelles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
+      <header class="navbar">
         <img src="billeder/logo_hvid.svg" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="">Kuser</a></li>
-            <li><a href="">Tips & Tricks</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="nav-item"><a href="index.html">Hjem</a></li>
+            <li class="nav-item"><a href="">Kuser</a></li>
+            <li class="nav-item"><a href="">Tips & Tricks</a></li>
+            <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
           </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-      </div>
+      </header>
 
       <div class="row">
         <div class="col">
@@ -112,7 +125,7 @@
     </div>
 
     <div class="row1">
-      <button>Se flere kurser</button>
+      <button>Flere kurser</button>
     </div>
 
     <div class="container2">
@@ -148,5 +161,6 @@
         <img src="billeder/bni2.jpg" alt="billede1" />
       </div>
     </div>
+    <script src="burger2.js"></script>
   </body>
 </html>
