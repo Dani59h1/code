@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #919191;
+  background-color: #e6e7ed;
 }
 
 img {
@@ -71,7 +71,7 @@ ul li a:hover {
 .row {
   display: grid;
   grid-auto-flow: row;
-  color: white;
+  color: #e6e7ed;
   margin: 5rem auto;
   width: min(93%, 75vw);
   justify-content: left;
@@ -85,7 +85,7 @@ ul li a:hover {
 }
 
 h1 {
-  color: rgb(245, 245, 245);
+  color: #e6e7ed;
   font-size: 70px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -94,7 +94,7 @@ h1 {
 .paragraph {
   display: grid;
   grid-auto-flow: row;
-  color: white;
+  color: #e6e7ed;
   width: min(30%, 75rem);
   justify-content: left;
   margin-left: 8%;
@@ -140,7 +140,7 @@ p {
 }
 
 .overskrift h2 {
-  color: whitesmoke;
+  color: rgba(0, 0, 0, 0.726);
   margin-top: 6%;
   margin-bottom: 6%;
 }
@@ -161,7 +161,7 @@ p {
 
 .kolonne img {
   border-radius: 7%;
-  box-shadow: 5px 5px 20px;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
 .kolonne .div1:hover {
@@ -175,15 +175,27 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* KNAP */
+
 .row1 button {
-  font-size: 1em;
-  background: whitesmoke;
-  padding: 20px 63px;
-  text-transform: uppercase;
-  box-shadow: 5px 5px 20px;
   grid-column: 2/3;
   margin-left: 20%;
   margin-right: 20%;
+  padding: 1.5em 5em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .row1 button:hover {
