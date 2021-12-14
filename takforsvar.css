@@ -10,7 +10,7 @@ body {
 
 button {
   background-color: #000000;
-  color: white;
+  color: whitesmoke;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -32,9 +32,10 @@ button:hover {
   width: 60%;
   text-align: center;
   padding: 20px;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
   max-width: 600px;
+  margin-top: 8rem;
 }
 
 /* _________BURGER MENU__________________ */
@@ -74,6 +75,7 @@ nav ul li a {
 
 ul li a:hover {
   /* color: grey; */
+  color: rgb(255, 210, 29);
 }
 
 .hamburger {
@@ -87,7 +89,7 @@ ul li a:hover {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #ffffff;
 }
 
 /* burgermenu center og under hinanden */
@@ -108,9 +110,9 @@ ul li a:hover {
   color: #475569;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   color: #482ff7;
-}
+} */
 
 .nav-logo {
   font-size: 2.1rem;
@@ -125,7 +127,7 @@ ul li a:hover {
   .menu {
     position: fixed;
     left: -100%;
-    top: 7.5rem;
+    top: 3.9rem;
     flex-direction: column;
     background-color: black;
     width: 100%;
@@ -155,7 +157,7 @@ ul li a:hover {
     display: block;
     cursor: pointer;
     float: right;
-    background-color: rgb(181, 181, 181);
+    /* background-color: rgb(181, 181, 181); */
     padding-inline: 0.5rem;
     padding-block: 0.2rem;
     border-radius: 5px;
