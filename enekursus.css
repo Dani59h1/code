@@ -45,14 +45,14 @@ h3 {
 }
 
 p {
-  font-family: Helvetica;
+  font-family: Poppins;
   font-size: 0.9rem;
   line-height: 140%;
 }
 
 body {
   margin: 0%;
-  background-color: #e0e0e0;
+  background-color: #e6e7ed;
 }
 
 #indhold {
@@ -142,7 +142,7 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   color: whitesmoke;
-
+  font-family: ubuntu;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s;
