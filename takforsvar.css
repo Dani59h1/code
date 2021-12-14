@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #696969;
 }
@@ -29,4 +35,142 @@ button:hover {
   background-color: white;
   border-radius: 10px;
   max-width: 600px;
+}
+
+/* _________BURGER MENU__________________ */
+
+.navbar {
+  /* height: 12%; */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgb(64, 64, 64);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 40px;
+  cursor: pointer;
+  margin-block: 0.2rem;
+  margin-left: 1rem;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 5%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul li a:hover {
+  /* color: grey; */
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+/* burgermenu center og under hinanden */
+.menu {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: right; */
+  float: right;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+/* -------media------ */
+
+@media only screen and (max-width: 768px) {
+  /* Burgermenuen, farve, placering */
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 7.5rem;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    font-size: 2rem;
+  }
+
+  /* hvid streg i bunden når der er burgermenu størrelse */
+  /* .navbar {
+    border-bottom: 1px solid rgb(159, 159, 159);
+  } */
+
+  /* Placering af menu når man åbner burgermenu */
+  .menu.active {
+    left: 0;
+  }
+
+  /* Margin imellem tekst i åben burgermenu */
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  /* Viser de tre streger og at man kan trykke på dem */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    background-color: rgb(181, 181, 181);
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 5px;
+  }
+
+  /* Transition af de tre streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #696969;
+  background-color: #e6e7ed;
 }
 
 img {
@@ -71,10 +71,11 @@ ul li a:hover {
 .row {
   display: grid;
   grid-auto-flow: row;
-  color: #b44371;
+  color: #e6e7ed;
   margin: 5rem auto;
-  width: min(93%, 75rem);
+  width: min(93%, 75vw);
   justify-content: left;
+  margin-left: 8%;
   gap: 3em;
 }
 
@@ -84,15 +85,8 @@ ul li a:hover {
 }
 
 h1 {
-  color: rgba(245, 245, 245, 0.664);
+  color: #e6e7ed;
   font-size: 70px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-h2 {
-  color: rgba(245, 245, 245, 0.664);
-  font-size: 30px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -100,27 +94,32 @@ h2 {
 .paragraph {
   display: grid;
   grid-auto-flow: row;
-  color: #b44371;
-  margin-left: 60%;
-  margin-top: 20%;
-  width: min(20%, 75rem);
-  justify-content: right;
+  color: #e6e7ed;
+  width: min(30%, 75rem);
+  justify-content: left;
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.paragraph p {
+  font-size: 120%;
 }
 
 p {
   color: whitesmoke;
-  font-size: 14px;
+  font-family: Poppins;
 }
 
 .indhold {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 1%;
+  gap: 1%;
 }
 
 .billede img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .billede {
@@ -130,16 +129,18 @@ p {
 
 .text3 {
   position: absolute;
-  bottom: 25px;
-  padding: 10rem;
+  bottom: 50px;
+  padding: 5rem;
 }
 
 .text3 p {
   color: black;
+  background-color: whitesmoke;
+  padding: 5%;
 }
 
 .overskrift h2 {
-  color: whitesmoke;
+  color: rgba(0, 0, 0, 0.726);
   margin-top: 6%;
   margin-bottom: 6%;
 }
@@ -160,7 +161,7 @@ p {
 
 .kolonne img {
   border-radius: 7%;
-  box-shadow: 5px 5px 20px;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
 .kolonne .div1:hover {
@@ -174,15 +175,27 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* KNAP */
+
 .row1 button {
-  font-size: 1em;
-  background: whitesmoke;
-  padding: 20px 63px;
-  text-transform: uppercase;
-  box-shadow: 5px 5px 20px;
   grid-column: 2/3;
   margin-left: 20%;
   margin-right: 20%;
+  padding: 1.5em 5em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .row1 button:hover {
@@ -283,7 +296,7 @@ p {
 
 @media (max-width: 900px) {
   .paragraph {
-    width: min(50%, 75rem);
+    width: min(40%, 75rem);
     place-content: end-center;
   }
 }
@@ -325,6 +338,114 @@ p {
 
   .paragraph {
     width: min(70%, 75rem);
-    place-content: end-center;
+  }
+
+  .col h1 {
+    font-size: 300%;
+  }
+
+  .col h2 {
+    font-size: 200%;
+  }
+}
+
+/* _________BURGER MENU__________________ */
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+/* burgermenu center og under hinanden */
+.menu {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: right; */
+  float: right;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+/* -------media------ */
+
+@media only screen and (max-width: 768px) {
+  /* Burgermenuen, farve, placering */
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 7.5rem;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    font-size: 2rem;
+  }
+
+  /* hvid streg i bunden når der er burgermenu størrelse */
+  .navbar {
+    border-bottom: 1px solid rgb(159, 159, 159);
+  }
+
+  /* Placering af menu når man åbner burgermenu */
+  .menu.active {
+    left: 0;
+  }
+
+  /* Margin imellem tekst i åben burgermenu */
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  /* Viser de tre streger og at man kan trykke på dem */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    background-color: rgb(181, 181, 181);
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 5px;
+  }
+
+  /* Transition af de tre streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
