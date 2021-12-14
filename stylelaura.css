@@ -14,6 +14,13 @@ body {
   background-color: #696969;
 }
 
+/* navbar */
+
+.navbar li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .navbar {
   height: 12%;
   display: flex;
@@ -45,6 +52,8 @@ nav ul li a {
 ul li a:hover {
   color: grey;
 }
+
+/* indhold */
 
 .overskrift {
   padding-top: 5rem;
@@ -167,20 +176,3 @@ ul li a:hover {
     padding: 1rem;
   }
 }
-
-/* @media (max-width: 600px) {
-  .navbar li {
-    height: 12%;
-  }
-
-  .logo {
-    width: 50px;
-    cursor: pointer;
-  }
-
-  nav {
-    flex: 1;
-    /* text-align: right; */
-    margin-right: 5%;
-  }
-} */
