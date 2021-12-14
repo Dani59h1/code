@@ -15,17 +15,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
-        <img src="logo_hvid.svg" class="logo" />
-        <nav>
-
-
-          <ul>
-            <li><a href="">Kurser</a></li>
-            <li><a href="">Tips & Tricks</a></li>
-            <li><a href="">Kontakt</a></li>
-          </ul>
-        </nav>
+    <div class="container">
+        <header class="navbar">
+            <a href="index.html"><img src="billeder/logo_hvid.svg" class="logo" /></a>
+          <nav class="nav">
+            <ul class="menu">
+              <li class="nav-item"><a href="index.html">Hjem</a></li>
+              <li class="nav-item"><a href="produkt.html">Kurser</a></li>
+              <li class="nav-item">
+                <a href="tipsogtricks.html">Tips & Tricks</a>
+              </li>
+              <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+  
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </header>
       </div><h1>Tips & Tricks</h1>
       <div class="sidenav">
         <form action="action_page.php">
@@ -89,9 +98,6 @@
             <div class="container" style="background-color:white">
               <input type="text" placeholder="Navn" name="name" required>
               <input type="text" placeholder="Email adresse" name="mail" required>
-              <label>
-                <input type="checkbox" checked="checked" name="subscribe">
-              </label>
             </div>
           
             <div class="container">
@@ -100,5 +106,6 @@
           </form> 
     </div>
 </footer>
-
+<script src=".burger2.js"></script>
 </body>
+</html>
