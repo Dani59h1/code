@@ -36,6 +36,7 @@ button:hover {
   border-radius: 10px;
   max-width: 600px;
   margin-top: 8rem;
+  margin-bottom: 9rem;
 }
 
 /* _________BURGER MENU__________________ */
@@ -174,5 +175,127 @@ ul li a:hover {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center top;
+  /* gap: 10px; */
+  background-color: white;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+.item7 {
+  grid-column: 1/2;
+  margin-left: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.item7 img {
+  width: 50%;
+  max-width: 150px;
+}
+
+.item7 h3 {
+  font-size: 0.7rem;
+}
+
+.item8 {
+  grid-column: 2/3;
+  text-align: center;
+  margin-top: 2rem;
+  /* margin-bottom: 10%; */
+}
+
+.item8 h3 {
+  font-size: 0.7rem;
+  margin: 2px;
+}
+
+.item9 {
+  font-family: "Ubuntu";
+  grid-column: 3/4;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* margin-right: 0rem; */
+}
+
+.item9 h3 {
+  font-size: 0.7rem;
+}
+
+.item9 input {
+  width: 80%;
+}
+
+.container input {
+  margin: 0.1rem;
+  font-family: ubuntu;
+  cursor: pointer;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  /* padding: 12px 20px; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #474747;
+}
+
+.container p {
+  font-family: ubuntu;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .item7 h3 {
+    font-size: 0.4rem;
+  }
+
+  /* .item7 img {
+   width: 100%;
+  }  */
+
+  .item8 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item8 {
+    margin-left: -15%;
+  }
+
+  .item9 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item9 {
+    margin-left: 0%;
+  }
+
+  .container p {
+    font-size: 0.4rem;
+  }
+
+  .container input {
+    font-size: 0.4rem;
+    padding: 5px;
+  }
+
+  .item2 {
+    margin-left: 0%;
   }
 }
