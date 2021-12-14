@@ -76,10 +76,7 @@ ul li a:hover {
   grid-auto-flow: row;
   color: #e6e7ed;
   margin: 5rem auto;
-  width: min(93%, 75vw);
-  justify-content: left;
-  margin-left: 8%;
-  gap: 3em;
+  margin-left: -2%;
 }
 
 .col {
@@ -101,7 +98,7 @@ h1 {
   width: min(30%, 75rem);
   justify-content: left;
   margin-left: 8%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .paragraph p {
