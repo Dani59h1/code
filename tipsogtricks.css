@@ -41,37 +41,65 @@ h2,
 h3 {
   font-family: Ubuntu;
   margin-top: 0%;
+  /* color: white; */
   /* font-size: 1vw; */
 }
 
+h2 {
+  color: whitesmoke;
+}
+
+h1 {
+  color: #504f4f;
+}
+
 p {
-  font-family: Helvetica;
+  font-family: Poppins;
   font-size: 0.9rem;
   line-height: 140%;
 }
 
 body {
   margin: 0%;
-  background-color: #e0e0e0;
+  background-color: #e6e7ed;
 }
 
 .sidenav {
   background-color: #696969;
+  margin: 2%;
+  border-radius: 7px;
+  color: white;
+  background-color: #696969;
 }
 
-@media (min-width: 300px) {
+.sidenav p {
+  margin: 2%;
+  padding-top: 2%;
+}
+
+.sidenav h3 {
+  margin: 2%;
+  padding-top: 2%;
+}
+
+@media (min-width: 500px) {
   .sidenav {
     height: auto; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 20%; /* Stay at the top */
+    top: 13%; /* Stay at the top */
     left: 75%;
-    background-color: #696969; /* Black */
+    /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding: 20px;
     border-radius: 7px;
-    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidenav {
+    top: 9%; /* Stay at the top */
   }
 }
 
@@ -95,34 +123,53 @@ h2 {
 #indhold {
   display: grid;
   grid-template-rows: 4fr;
-  width: 63%;
   gap: 2%;
+  width: 96%;
+  margin-left: 2%;
+  margin-bottom: 20%;
+}
+
+@media (min-width: 500px) {
+  #indhold {
+    width: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  #indhold {
+    padding-bottom: 10%;
+  }
 }
 
 #section1 {
   border-radius: 7px;
   background-color: white;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
 #indhold p,
 h2 {
   margin-left: 2%;
   margin-right: 2%;
+  color: rgba(0, 0, 0, 0.726);
 }
 
 #section2 {
   border-radius: 7px;
   background-color: white;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
 #section3 {
   border-radius: 7px;
   background-color: white;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
 #section4 {
   border-radius: 7px;
   background-color: white;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
 @media (min-width: 900px) {
@@ -133,6 +180,26 @@ h2 {
 
   h1 {
     margin-left: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  #indhold {
+    padding-top: 2%;
+  }
+}
+
+@media (min-width: 700px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 }
 
@@ -156,4 +223,158 @@ h2 {
 
 .section4 {
   grid-row: 4/5;
+}
+
+.billede1 {
+  display: grid;
+  place-items: end left;
+}
+
+img,
+h2 {
+  grid-area: 1/1;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.billede2 {
+  display: grid;
+  place-items: end left;
+}
+
+.billede3 {
+  display: grid;
+  place-items: end left;
+}
+
+.billede4 {
+  display: grid;
+  place-items: end left;
+}
+
+#section1:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#section2:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#section3:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#section4:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center top;
+  gap: 10px;
+  background-color: white;
+}
+
+.item7 {
+  grid-column: 1/2;
+  margin-left: 10%;
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
+
+.item7 img {
+  width: 55%;
+}
+
+.item7 h3 {
+  font-size: 0.7rem;
+}
+
+.item8 {
+  grid-column: 2/3;
+  /* margin-left: 5%; */
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 15%;
+}
+
+.item8 h3 {
+  font-size: 0.7rem;
+  margin: 2px;
+}
+
+.item9 {
+  font-family: Ubuntu;
+  grid-column: 3/4;
+  margin-left: 35%;
+  margin-top: 27%;
+  margin-bottom: 15%;
+}
+
+.item9 h3 {
+  font-size: 0.7rem;
+}
+
+.item9 input {
+  width: 80%;
+}
+
+.container input {
+  margin: 1%;
+  font-family: ubuntu;
+  cursor: pointer;
+}
+
+.container p {
+  font-family: ubuntu;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .item7 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item7 img {
+    width: 100%;
+  }
+
+  .item8 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item8 {
+    margin-left: -15%;
+  }
+
+  .item9 h3 {
+    font-size: 0.4rem;
+  }
+
+  .item9 {
+    margin-left: 0%;
+  }
+
+  .container p {
+    font-size: 0.4rem;
+  }
+
+  .container input {
+    font-size: 0.4rem;
+  }
+
+  .item2 {
+    margin-left: 0%;
+  }
 }
