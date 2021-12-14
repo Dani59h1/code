@@ -22,13 +22,18 @@ video {
 .container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(billeder/kontor.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(billeder/bni.jpg);
   background-position: center;
   background-size: cover;
   padding-left: 8%;
   padding-right: 8%;
   box-sizing: border-box;
+}
+
+.navbar li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .navbar {
@@ -69,7 +74,7 @@ ul li a:hover {
   color: #b44371;
   margin: 5rem auto;
   width: min(93%, 75rem);
-  justify-content: right;
+  justify-content: left;
   gap: 3em;
 }
 
@@ -81,22 +86,25 @@ ul li a:hover {
 h1 {
   color: rgba(245, 245, 245, 0.664);
   font-size: 70px;
-  font-family: Anton;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h2 {
   color: rgba(245, 245, 245, 0.664);
   font-size: 30px;
-  font-family: Anton;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .paragraph {
   display: grid;
   grid-auto-flow: row;
   color: #b44371;
-  margin-left: 15%;
-  margin-top: 15%;
+  margin-left: 60%;
+  margin-top: 20%;
   width: min(20%, 75rem);
+  justify-content: right;
 }
 
 p {
@@ -205,17 +213,32 @@ p {
   gap: 5%;
 }
 
+.text2 h2 {
+  padding-bottom: 2%;
+}
+
 .text2 h2 p {
   position: absolute;
 }
 
 .text2 p {
-  margin-bottom: 15%;
+  margin-bottom: 10%;
+  font-size: large;
+  line-height: 150%;
 }
 
 .text2 li {
   color: whitesmoke;
+  font-size: large;
+  line-height: 150%;
 }
+
+.sideimage {
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+/* Media Queries */
 
 @media (max-width: 1200px) {
   .text3 {
@@ -231,6 +254,10 @@ p {
   }
   .text2 p {
     margin-bottom: 5%;
+  }
+
+  .sideimage img {
+    width: 80%;
   }
 
   .row1 {

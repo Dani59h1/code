@@ -73,6 +73,7 @@ form {
 
 .kontaktcontainer img {
   padding-bottom: 0.5rem;
+  width: 100%;
 }
 .kontaktcontainer h3 {
   padding-bottom: 0.5rem;
@@ -99,10 +100,11 @@ form {
   /* vw to adjust the size of splash picture according to size */
   height: 25vw;
   width: 100%;
-  background-image: url(/billeder/authree.jpg);
+  background-image: url(billeder/hylde.webp);
   background-size: cover;
   background-repeat: no-repeat;
   /* for text below */
+  font-family: "ubuntu";
   text-align: center;
   padding: 100px 0;
   font-size: 2rem;
