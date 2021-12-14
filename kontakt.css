@@ -98,21 +98,26 @@ form {
 
 .splashie {
   /* vw to adjust the size of splash picture according to size */
-  height: 25vw;
+  height: 10rem;
   width: 100%;
-  background-image: url(billeder/hylde.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(billeder/hylde.webp);
   background-size: cover;
   background-repeat: no-repeat;
+
   /* for text below */
-  font-family: "ubuntu";
+  font-family: "Segoe UI";
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
+  /* font-size: 2rem; */
+  color: rgb(255, 210, 29);
   font-size: 2rem;
-  color: rgb(251, 255, 27);
 }
 
 @media (min-width: 800px) {
   .splashie {
     font-size: 4rem;
+    height: 15rem;
+    width: 100%;
   }
 }
