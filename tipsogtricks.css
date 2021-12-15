@@ -49,7 +49,7 @@ body {
 
 #wrapper {
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: 2fr;
 }
 
 .sidenav {
@@ -292,7 +292,7 @@ h2 {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center top;
+  align-items: center;
   /* gap: 10px; */
   background-color: white;
   left: 0px;
