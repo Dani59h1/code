@@ -233,8 +233,6 @@ video {
   color: rgba(0, 0, 0, 0.726);
 }
 
-
-
 .text2 p {
   margin-bottom: 10%; /* luft fra p til h2 */
   font-size: large; 
@@ -293,7 +291,6 @@ video {
     padding: 5rem;
   }
 }
-
 
 
 @media (max-width: 1000px) {
