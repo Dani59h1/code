@@ -72,6 +72,12 @@ form {
   font-size: 1rem;
   line-height: 1.2rem;
   padding-bottom: 0.5rem;
+  font-family: "poppins";
+}
+
+.kontaktcontainer h2,
+h3 {
+  font-family: "ubuntu";
 }
 
 .kontaktcontainer img {
@@ -109,12 +115,12 @@ form {
   background-repeat: no-repeat;
 
   /* for text below */
-  font-family: "Segoe UI";
+  font-family: "ubuntu";
   text-align: center;
   padding: 50px 0;
   /* font-size: 2rem; */
   color: rgb(255, 210, 29);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media (min-width: 800px) {
