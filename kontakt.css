@@ -61,11 +61,11 @@ form {
   margin-inline: 5rem;
   margin-block: 3rem;
   border-radius: 5px;
-  background-color: #d0d0d0;
+  background-color: whitesmoke;
   padding: 1rem;
 
   box-shadow: rgb(184, 185, 190) 6px 6px 12px 0px,
-    rgb(255, 255, 255) -6px -6px 12px 0px;
+    rgb(184, 185, 190) 6px 6px 12px 0px;
 }
 
 .kontaktcontainer p {
@@ -291,6 +291,7 @@ footer {
 
 .item7 h3 {
   font-size: 0.7rem;
+  font-family: "Ubuntu";
 }
 
 .item8 {
@@ -303,14 +304,15 @@ footer {
 .item8 h3 {
   font-size: 0.7rem;
   margin: 2px;
+  font-family: "Ubuntu";
 }
 
 .item9 {
-  font-family: "Ubuntu";
   grid-column: 3/4;
   margin-left: 10rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-family: "Ubuntu";
   /* margin-right: 0rem; */
 }
 
@@ -324,7 +326,7 @@ footer {
 
 .container input {
   margin: 0.1rem;
-  font-family: ubuntu;
+  font-family: "Ubuntu";
   cursor: pointer;
   padding: 10px;
 }
@@ -343,7 +345,7 @@ input[type="submit"]:hover {
 }
 
 .container p {
-  font-family: ubuntu;
+  font-family: "Ubuntu";
   font-size: 0.8rem;
 }
 
