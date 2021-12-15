@@ -19,7 +19,7 @@ img {
       rgba(44, 44, 44, 0.5),
       rgba(80, 80, 80, 0.7)
     ),
-    url(billeder/bni.jpg); /* filter på splash */
+    url(billeder/bni.webp); /* filter på splash */
   background-size: cover; /* hele billedet ses  */
   padding-left: 8%; /* placering af tekst  */
 }
@@ -351,6 +351,12 @@ video {
     gap: 2%;
     padding: 40px;
   }
+
+  .text3 {
+    position: absolute;
+    bottom: 50px;
+    padding: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -364,8 +370,8 @@ video {
 
   .text3 {
     position: absolute;
-    bottom: 90px;
-    padding: 5rem;
+    bottom: 20px;
+    padding: 3rem;
   }
 
   .paragraph {
