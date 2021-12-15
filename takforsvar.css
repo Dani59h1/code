@@ -39,6 +39,10 @@ button:hover {
   margin-bottom: 9rem;
 }
 
+#test h3 {
+  font-family: "ubuntu";
+}
+
 /* _________BURGER MENU__________________ */
 
 .navbar {
