@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #e6e7ed;ƒ
+  background-color: #e6e7ed;
 }
 
 img {
@@ -508,19 +508,22 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center top;
-  gap: 10px;
+  /* gap: 10px; */
   background-color: white;
+  left: 0px;
+  bottom: 0px;
 }
 
 .item7 {
   grid-column: 1/2;
   margin-left: 10%;
-  margin-top: 20%;
-  margin-bottom: 15%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .item7 img {
-  width: 55%;
+  width: 50%;
+  max-width: 150px;
 }
 
 .item7 h3 {
@@ -529,10 +532,9 @@ footer {
 
 .item8 {
   grid-column: 2/3;
-  /* margin-left: 5%; */
   text-align: center;
-  margin-top: 30%;
-  margin-bottom: 15%;
+  margin-top: 2rem;
+  /* margin-bottom: 10%; */
 }
 
 .item8 h3 {
@@ -541,11 +543,12 @@ footer {
 }
 
 .item9 {
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
   grid-column: 3/4;
-  margin-left: 35%;
-  margin-top: 27%;
-  margin-bottom: 15%;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* margin-right: 0rem; */
 }
 
 .item9 h3 {
@@ -557,16 +560,29 @@ footer {
 }
 
 .containerfooter input {
-  margin: 1%;
+  margin: 0.1rem;
   font-family: ubuntu;
   cursor: pointer;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  /* padding: 12px 20px; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #474747;
 }
 
 .containerfooter p {
   font-family: ubuntu;
   font-size: 0.8rem;
 }
-
 /* MEDIA */
 
 
