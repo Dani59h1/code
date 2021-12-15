@@ -12,76 +12,58 @@ img {
   max-width: 100%;
 }
 
-video {
-  aspect-ratio: 16/9;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
+/* NAV-BAR, SPLASH & OVERSKRIFT */
 .container {
-  width: 100%;
-  height: 100vh;
+  height: 100vh; /* så billedet fylder hele skærmen  */
   background-image: linear-gradient(
       rgba(94, 94, 94, 0.5),
       rgba(80, 80, 80, 0.7)
     ),
-    url(billeder/bni.jpg);
-  background-position: center;
-  background-size: cover;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
+    url(billeder/bni.jpg); /* filter på splash */
+  background-size: cover; /* hele billedet ses  */
+  padding-left: 8%; /* placering af tekst  */
 }
 
+/* NAV-BAR */
+
 .navbar li {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: ubuntu;
 }
 
 .navbar {
-  height: 12%;
-  display: flex;
-  align-items: center;
+  height: 12%; /* højden på navigationsbaren  */
+  display: flex; /* alle elementer står ved siden af hinanden  */
+  align-items: center; /* elementerne står i midten af højden i nav-baren  */
 }
 
 .logo {
-  width: 50px;
-  cursor: pointer;
+  width: 50px; /* konkretisering af logoets størrelse  */
+  cursor: pointer; /* så musen fortæller brugeren af elementet er klikbart  */
 }
 
 nav {
-  flex: 1;
-  text-align: right;
-  margin-right: 5%;
+  flex: 1; /* antal rækker til nav-elementer  */
+  text-align: right; /* tekst til højre  */
+  margin-right: 5%; /* luft til højre fra tekst  */
 }
 
 nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 60px;
+  display: inline-block; /* prikker forsvinder fra tekst  */
 }
 
 nav ul li a {
-  text-decoration: none;
+  text-decoration: none; /* linje forsvinder  */
   color: whitesmoke;
 }
 
 ul li a:hover {
-  color: grey;
+  color: #f9d24d;
 }
 
 .row {
-  display: grid;
-  grid-auto-flow: row;
   color: #e6e7ed;
-  margin: 5rem auto;
-  margin-left: -2%;
-}
-
-.col {
-  flex-basis: 90%;
-  align-items: center;
+  margin: 5rem auto; /* placering af tekst */
+  margin-left: -2%; /* luft i venstre side  */
 }
 
 h1 {
@@ -97,13 +79,11 @@ h2 {
 }
 
 .paragraph {
-  display: grid;
-  grid-auto-flow: row;
   color: #e6e7ed;
-  width: min(35%, 75rem);
-  justify-content: left;
-  margin-left: -2%;
+  width: min(35%, 75rem); /* difination af område tekst på fylde  */
+  margin-left: -2%; /* luft i venstre side  */
 }
+
 
 .paragraph p {
   font-size: 120%;
@@ -114,44 +94,58 @@ p {
   font-family: Poppins;
 }
 
+
+/* VIDEO SAMT BILLEDE  */
+
 .indhold {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* grid to kolonner  */
   margin: 1%;
   gap: 1%;
 }
 
-.billede img {
+
+video {
   width: 100%;
-  height: 100%;
+  height: 100%; /* så videoen alligner med billedet til højre  */
+  object-fit: cover;
+}
+
+
+.billede img {
+  height: 100%; /* billedet alligner med videoen  */
 }
 
 .billede {
   position: relative;
-  text-align: center;
+  text-align: center; tekst står i midten af billedet 
 }
 
 .text3 {
   position: absolute;
-  bottom: 50px;
-  padding: 5rem;
+  bottom: 50px; /* placering af tekst  */
+  padding: 5rem; /* definering af luften omkring kassen  */
 }
 
 .text3 p {
   color: black;
   background-color: whitesmoke;
-  padding: 5%;
+  padding: 5%; /* størrelsen på kassen  */
 }
 
 .overskrift h2 {
   color: rgba(0, 0, 0, 0.726);
-  margin-top: 6%;
+  margin-top: 6%; 
   margin-bottom: 6%;
 }
 
 .overskrift {
-  text-align: center;
+  text-align: center; /* placering */
 }
+
+
+
+/* PRODUKT ELEMENTER */
 
 .kolonne {
   display: grid;
@@ -160,57 +154,25 @@ p {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 3%;
-  margin-top: 3%;
+  margin-top: 3%; /* placering af elementerne */
 }
 
 .kolonne img {
-  border-radius: 7%;
-  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
+  border-radius: 7%; /* runding på elementerne  */
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff; /* skygger på elementer */
 }
 
 .kolonne .div1:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  cursor: pointer;
+  transform: scale(1.1) ; /* animation på elementer */
+  transition: 0.3s; /* længde på animation */
+  cursor: pointer; /* synliggør klikbarhed */
 }
 
-.row1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
-/* KNAP */
-
-.row1 button {
-  grid-column: 2/3;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 1.5em 5em;
-  background: #efefef;
-  border: none;
-  border-radius: 0.5rem;
-  color: #444;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
-    -6px -6px 10px rgba(255, 255, 255, 0.5),
-    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.row1 button:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
+/* KURSER TEKST */
 .div1 {
   position: relative;
-  text-align: center;
+  text-align: center; /* tekst i midten  */
 }
 
 .text1 p {
@@ -221,27 +183,61 @@ p {
   position: absolute;
   bottom: -3px;
   padding: 1rem;
+  font-size: small;
+  margin-bottom: 6%;
 }
+
+
+
+/* KNAP */
+
+.row1 {
+}
+
+.row1 button {
+
+  padding: 1.5em 5em; /* fylde af selve knappen  */
+  background: #efefef;
+  border: none; /* fjern linje omkring knap  */
+  border-radius: 0.5rem; /* runding */
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem; /* luft mellem bogstaver */
+  text-align: center; /* tekst i midten  */
+  cursor: pointer; /* vis klikbarhed */
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15); /* skygger på knap  */
+}
+
+.row1 button:hover {
+  transform: scale(1.1);
+  transition: 0.3s; /* animation hover knap  */
+  cursor: pointer; /* vis klikbarhed  */
+}
+
+
+
+
 
 .container2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 10%;
-  gap: 5%;
+  grid-template-columns: 1fr 1fr; /* antaler kolonner  */
+  margin: 10%; /* luft rundt om */
+  gap: 5%; /* luft mellem elementer */
 }
 
 .text2 h2 {
-  padding-bottom: 2%;
+  padding-bottom: 2%; /* placering af overskrift i forhold til brødtekst  */
   color: rgba(0, 0, 0, 0.726);
 }
 
-.text2 h2 p {
-  position: absolute;
-}
+
 
 .text2 p {
-  margin-bottom: 10%;
-  font-size: large;
+  margin-bottom: 10%; /* luft fra p til h2 */
+  font-size: large; 
   line-height: 150%;
   color: rgba(0, 0, 0, 0.726);
 }
@@ -260,13 +256,45 @@ p {
 
 /* Media Queries */
 
+@media (max-width: 1300px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
 @media (max-width: 1200px) {
   .text3 {
     position: absolute;
     bottom: 70px;
     padding: 5rem;
   }
+
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .row1 {
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+
+  .text3 {
+    position: absolute;
+    bottom: 1px;
+    padding: 5rem;
+  }
 }
+
+
 
 @media (max-width: 1000px) {
   .container2 {
@@ -306,6 +334,12 @@ p {
     width: min(40%, 75rem);
     place-content: end-center;
   }
+
+    .text3 {
+    position: absolute;
+    bottom: -20px;
+    padding: 4rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -320,15 +354,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
-  .text2 p {
-    margin-bottom: 15%;
-  }
-
-  .overskrift h2 {
-    margin-top: 50px;
-  }
-
+@media (max-width: 700px) {
   .row1 {
     margin-top: 30%;
     margin-left: 0%;
@@ -341,6 +367,16 @@ p {
     grid-template-columns: 1fr;
     gap: 2%;
     padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text2 p {
+    margin-bottom: 15%;
+  }
+
+  .overskrift h2 {
+    margin-top: 50px;
   }
 
   .text3 {
@@ -532,18 +568,5 @@ footer {
 
 /* MEDIA */
 
-@media (max-width: 1200px) {
-  .text3 {
-    position: absolute;
-    bottom: 1px;
-    padding: 5rem;
-  }
-}
 
-@media (max-width: 900px) {
-  .text3 {
-    position: absolute;
-    bottom: -20px;
-    padding: 4rem;
-  }
-}
+
