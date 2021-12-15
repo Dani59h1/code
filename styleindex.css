@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #e6e7ed;
+  background-color: #e6e7ed;ƒ
 }
 
 img {
@@ -191,7 +191,9 @@ video {
 
 /* KNAP */
 
-.row1 {
+
+.row1 button {
+margin-left: 39.5%;
 }
 
 .row1 button {
@@ -216,10 +218,6 @@ video {
   transition: 0.3s; /* animation hover knap  */
   cursor: pointer; /* vis klikbarhed  */
 }
-
-
-
-
 
 .container2 {
   display: grid;
@@ -262,6 +260,12 @@ video {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+   .row1 button{
+    margin-top: 5%;
+    margin-left: 37%;
+    
+  }
 }
 
 @media (max-width: 1200px) {
@@ -279,10 +283,8 @@ video {
     margin-right: 20%;
   }
 
-  .row1 {
-    margin-top: 15%;
-    margin-left: 5%;
-    margin-right: 15%;
+  .row1 button{
+    margin-top: 8%;
   }
 
   .text3 {
@@ -306,9 +308,8 @@ video {
   }
 
   .row1 {
-    margin-top: 15%;
-    margin-left: 5%;
-    margin-right: 15%;
+    margin-top: 8%;
+    margin-left: -5%;
   }
 
   .kolonne {
@@ -353,10 +354,8 @@ video {
 
 @media (max-width: 700px) {
   .row1 {
-    margin-top: 30%;
-    margin-left: 0%;
-    margin-right: 15%;
-    padding: 10px px;
+    margin-top: 15%;
+    margin-left: -15%;
   }
 
   .kolonne {
@@ -396,6 +395,11 @@ video {
 
   .sideimage img {
     width: 80%;
+  }
+
+   .row1 {
+    margin-top: 15%;
+    margin-right: 19%;
   }
 }
 
