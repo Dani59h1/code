@@ -75,6 +75,11 @@ ul li a:hover {
 .col h2 {
   color: #e6e7ed;
   font-size: 40px;
+  font-family: "ubuntu";
+}
+
+h2,
+h3 {
   font-family: ubuntu;
 }
 
