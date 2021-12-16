@@ -370,7 +370,7 @@ video {
 
   .text3 {
     position: absolute;
-    bottom: 20px;
+    bottom: -10px;
     padding: 3rem;
   }
 
@@ -379,11 +379,11 @@ video {
   }
 
   .col h1 {
-    font-size: 300%;
+    font-size: 200%;
   }
 
   .col h2 {
-    font-size: 200%;
+    font-size: 150%;
   }
 
   .sideimage img {
@@ -393,6 +393,20 @@ video {
   .row1 {
     margin-top: 15%;
     margin-right: 19%;
+  }
+}
+
+@media (max-width: 400px) {
+  .text1 p {
+    font-size: 70%;
+  }
+
+  .text3 p {
+    font-size: 80%;
+  }
+
+  .sideimage img {
+    margin-bottom: 30%;
   }
 }
 
