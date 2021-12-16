@@ -19,7 +19,7 @@ img {
       rgba(44, 44, 44, 0.5),
       rgba(80, 80, 80, 0.7)
     ),
-    url(billeder/bni.jpg); /* filter på splash */
+    url(billeder/bni.webp); /* filter på splash */
   background-size: cover; /* hele billedet ses  */
   padding-left: 8%; /* placering af tekst  */
 }
@@ -84,7 +84,6 @@ ul li a:hover {
   margin-left: -2%; /* luft i venstre side  */
 }
 
-
 .paragraph p {
   font-size: 120%;
 }
@@ -93,7 +92,6 @@ p {
   color: whitesmoke;
   font-family: Poppins;
 }
-
 
 /* VIDEO SAMT BILLEDE  */
 
@@ -104,13 +102,11 @@ p {
   gap: 1%;
 }
 
-
 video {
   width: 100%;
   height: 100%; /* så videoen alligner med billedet til højre  */
   object-fit: cover;
 }
-
 
 .billede img {
   height: 100%; /* billedet alligner med videoen  */
@@ -118,7 +114,7 @@ video {
 
 .billede {
   position: relative;
-  text-align: center; tekst står i midten af billedet 
+  text-align: center; /* tekst står i midten af billedet  */
 }
 
 .text3 {
@@ -135,15 +131,13 @@ video {
 
 .overskrift h2 {
   color: rgba(0, 0, 0, 0.726);
-  margin-top: 6%; 
+  margin-top: 6%;
   margin-bottom: 6%;
 }
 
 .overskrift {
   text-align: center; /* placering */
 }
-
-
 
 /* PRODUKT ELEMENTER */
 
@@ -163,11 +157,10 @@ video {
 }
 
 .kolonne .div1:hover {
-  transform: scale(1.1) ; /* animation på elementer */
+  transform: scale(1.1); /* animation på elementer */
   transition: 0.3s; /* længde på animation */
   cursor: pointer; /* synliggør klikbarhed */
 }
-
 
 /* KURSER TEKST */
 .div1 {
@@ -187,17 +180,13 @@ video {
   margin-bottom: 6%;
 }
 
-
-
 /* KNAP */
 
-
 .row1 button {
-margin-left: 39.5%;
+  margin-left: 39.5%;
 }
 
 .row1 button {
-
   padding: 1.5em 5em; /* fylde af selve knappen  */
   background: #efefef;
   border: none; /* fjern linje omkring knap  */
@@ -233,7 +222,7 @@ margin-left: 39.5%;
 
 .text2 p {
   margin-bottom: 10%; /* luft fra p til h2 */
-  font-size: large; 
+  font-size: large;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.726);
 }
@@ -261,10 +250,9 @@ margin-left: 39.5%;
     margin-right: 10%;
   }
 
-   .row1 button{
+  .row1 button {
     margin-top: 5%;
     margin-left: 37%;
-    
   }
 }
 
@@ -283,7 +271,7 @@ margin-left: 39.5%;
     margin-right: 20%;
   }
 
-  .row1 button{
+  .row1 button {
     margin-top: 8%;
   }
 
@@ -293,7 +281,6 @@ margin-left: 39.5%;
     padding: 5rem;
   }
 }
-
 
 @media (max-width: 1000px) {
   .container2 {
@@ -330,10 +317,9 @@ margin-left: 39.5%;
 @media (max-width: 900px) {
   .paragraph {
     width: min(40%, 75rem);
-    place-content: end-center;
   }
 
-    .text3 {
+  .text3 {
     position: absolute;
     bottom: -20px;
     padding: 4rem;
@@ -364,6 +350,12 @@ margin-left: 39.5%;
     gap: 2%;
     padding: 40px;
   }
+
+  .text3 {
+    position: absolute;
+    bottom: 50px;
+    padding: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -377,8 +369,8 @@ margin-left: 39.5%;
 
   .text3 {
     position: absolute;
-    bottom: 90px;
-    padding: 5rem;
+    bottom: -10px;
+    padding: 3rem;
   }
 
   .paragraph {
@@ -386,20 +378,34 @@ margin-left: 39.5%;
   }
 
   .col h1 {
-    font-size: 300%;
+    font-size: 200%;
   }
 
   .col h2 {
-    font-size: 200%;
+    font-size: 150%;
   }
 
   .sideimage img {
     width: 80%;
   }
 
-   .row1 {
+  .row1 {
     margin-top: 15%;
     margin-right: 19%;
+  }
+}
+
+@media (max-width: 400px) {
+  .text1 p {
+    font-size: 70%;
+  }
+
+  .text3 p {
+    font-size: 80%;
+  }
+
+  .sideimage img {
+    margin-bottom: 30%;
   }
 }
 
@@ -507,7 +513,7 @@ margin-left: 39.5%;
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center top;
+
   /* gap: 10px; */
   background-color: white;
   left: 0px;
@@ -584,6 +590,3 @@ input[type="submit"]:hover {
   font-size: 0.8rem;
 }
 /* MEDIA */
-
-
-

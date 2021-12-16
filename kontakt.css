@@ -140,6 +140,7 @@ h3 {
   padding: 0.5rem;
   background-color: #696969;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: "ubuntu";
 }
 
 .logo {
@@ -197,16 +198,6 @@ ul li a:hover {
   margin-left: 5rem;
 }
 
-.nav-link {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #475569;
-}
-
-/* .nav-link:hover {
-  color: #482ff7;
-} */
-
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
@@ -257,6 +248,7 @@ ul li a:hover {
   }
 
   /* Transition af de tre streger til et kryds */
+  /* nth-child snkkker til rækkefølgen på bar class og gør at den midterste kan forsvinde */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
