@@ -1,22 +1,14 @@
+//De tre streger i burger
 const hamburger = document.querySelector(".hamburger");
+//Menuen primært når den åbner
 const navMenu = document.querySelector(".menu");
 
+//Man kan trykke på stregerne
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
+    //de tre streger bliver til et kryds
     hamburger.classList.toggle("active");
+    //Menuen flytter sig til en position hvor vi kan se den ( left: 0; ). Se .menu.active i css
     navMenu.classList.toggle("active");
-}
-
-const navLink = document.querySelectorAll(".nav-link");
-
-
-// foreach. built in method creating magic, uden at vi behøver skrive mere. Den bringer alle items ud af array 
-// 'n' kan du kalde hvad du vil. Her kalder vi den n.... med arrow function efterfulgt af n, tilføjer vi resten af koden til dens arrays.
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
 }
