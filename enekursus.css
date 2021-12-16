@@ -107,23 +107,27 @@ body {
   cursor: pointer;
 }
 
-.row a {
-  display: inline-block;
-  font-size: 1em;
-  background: #696969;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: whitesmoke;
+button {
+  padding: 1.5em 5em; /* fylde af selve knappen  */
+  background: #efefef;
+  border: none; /* fjern linje omkring knap  */
+  border-radius: 0.5rem; /* runding */
+  color: #444;
   font-family: ubuntu;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.2s;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem; /* luft mellem bogstaver */
+  text-align: center; /* tekst i midten  */
+  cursor: pointer; /* vis klikbarhed */
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15); /* skygger på knap  */
 }
 
-.row a:hover {
+button:hover {
   transform: scale(1.1);
-  color: black;
-  background: whitesmoke;
+  transition: 0.3s; /* animation hover knap  */
+  cursor: pointer; /* vis klikbarhed  */
 }
 
 @media (min-width: 500px) {
