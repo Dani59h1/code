@@ -317,7 +317,6 @@ video {
 @media (max-width: 900px) {
   .paragraph {
     width: min(40%, 75rem);
-    place-content: end-center;
   }
 
   .text3 {
@@ -514,7 +513,7 @@ video {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center top;
+
   /* gap: 10px; */
   background-color: white;
   left: 0px;
