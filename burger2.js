@@ -3,7 +3,7 @@ const hamburger = document.querySelector(".hamburger");
 //Menuen primært når den åbner
 const navMenu = document.querySelector(".menu");
 
-//Man kan trykke på stregerne
+//Når man trykker på stregerne fører de til mobileMenu
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {

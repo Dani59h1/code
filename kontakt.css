@@ -248,6 +248,7 @@ ul li a:hover {
   }
 
   /* Transition af de tre streger til et kryds */
+  /* nth-child snkkker til rækkefølgen på bar class og gør at den midterste kan forsvinde */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }

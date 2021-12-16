@@ -434,6 +434,7 @@ ul li a:hover {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     font-size: 2rem;
+    z-index: +1;
   }
 
   /* hvid streg i bunden når der er burgermenu størrelse */
