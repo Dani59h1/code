@@ -4,208 +4,267 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styleindex.css" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="billeder/bbpc_logo1.svg">
+    <link rel="stylesheet" href="index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <!-- footer fonts below -->
+  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+<!-- Video two font below -->
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+<!-- overskrift font below  -->
+<link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@700&display=swap" rel="stylesheet">
+<!-- p font below  -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<!-- nav bar below  -->
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+
+
+</head>
+
   <body>
-    <div class="container">
-      <header class="navbar">
-        <a href="index.html">
-          <img src="billeder/logo_hvid.svg" class="logo" alt="logo" />
-        </a>
-        <nav class="nav">
-          <ul class="menu">
-            <li class="nav-item"><a href="index.html">Hjem</a></li>
-            <li class="nav-item"><a href="produkter.html">Kurser</a></li>
-            <li class="nav-item">
-              <a href="tipsogtricks.html">Tips & Tricks</a>
-            </li>
-            <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
-          </ul>
 
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </header>
 
-      <div class="row">
-        <div class="col">
-          <h1>Adobekurser</h1>
-          <h2>Med Benny Thaibert</h2>
+    <header class="navbar">
+      <a href="index.html">
+        <img src="billeder/logoexam.svg" class="logo" alt="logo" />
+      </a>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="nav-item"> <a href="index.html">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a href="themes.html" class="dropbtn">PORTFOLIO</a>
+            <div class="dropdown-content">
+              <a href="tema01.html">01 GULDBERG 29</a>
+              <a href="tema02.html">02 RESPONSIVE SITE</a>
+              <a href="tema03p1.html">03.1 BASIC UX</a>
+              <a href="tema03p2.html">03.2 UX PITCH</a>
+              <a href="tema04.html">04 ANIMATION</a>
+              <a href="tema05p1.html">05.1 REDESIGN</a>
+              <a href="tema05p2.html">05.2 REDESIGN VIDEO & PHOTO</a>
+              <a href="tema06.html">06 PORTFOLIO</a>
+            </div>
+          <li class="nav-item"><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+    
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="paragraph">
-        <p>
-          Kreative basiskurser for nye Adobe-brugere, samt bland-selv kurser til
-          dig som allerede har erfaring.
-        </p>
-      </div>
-    </div>
 
-    <div class="indhold">
-      <video src="https://vasiljev.dk/kea/05_content/bt.mp4" controls></video>
 
-      <div class="billede">
-        <img src="billeder/bnni.webp" alt="tastatur" />
 
-        <div class="text3">
-          <p>
-            "Kurset er niveauopdelt, hvilket betyder at jeg tager udgangspunkt i
-            dit personlige læringstempo og erfaringsniveau."
-          </p>
+<!-- Splash video test -->
+        <video class="video-container" autoplay loop muted preload="auto">
+          <source src="splashexamNoSmoke_1.mp4" type="video/mp4" alt="HTML5 background video">
+        </video>
+
+<!-- Video below splash -->
+      <div class="videotwo">
+        <video autoplay loop muted>
+          <source src="screen.mp4" type="video/webm" alt="HTML5 background video">
+        </video>
+
+        <div class="vasiljevic">
+          <h2>BY DANIEL VASILJEVIC</h2>
         </div>
+         
       </div>
-    </div>
+
+  <!-- Portfolio  -->
+  <div id="portfolioknapper">
 
     <div class="overskrift">
-      <h2>Forskellige Kurser</h2>
+      <h2>PORTFOLIO</h2>
     </div>
 
     <div class="kolonne">
-      <div class="div1">
-        <a href="enekursus.html"
-          ><img src="billeder/id.webp" alt="kursus1"
+
+      <div class="div1 themes">
+        <!-- Hvor den fører til  -->
+        <a href="tema01.html"
+          ><img src="tema01.jpg" alt="kursus1"
         /></a>
 
         <div class="text1">
           <p>
-            Har du erfaring med Indesign? Så passer dette kursus med garanti,
-            til dit behov.
+            GULDBERG 29
           </p>
         </div>
       </div>
 
-      <div class="div1">
-        <a href="enekursus.html"
-          ><img src="billeder/illuAdv.webp" alt="kursus2"
-        /></a>
+      <div class="div2 themes">
+        <a href="tema02.html">
+          <img src="tema02.jpg" alt="kursus2">
+        </a>
 
         <div class="text1">
-          <p>
-            Her lærer du at lave etiketter, emballage, logoer og illustrationer
-            mm.
-          </p>
+          <p>RESPONSIVE SITE</p>
         </div>
       </div>
 
-      <div class="div1">
-        <a href="enekursus.html"
-          ><img src="billeder/psAdv.webp" alt="kursus3"
+      <div class="div3 themes">
+        <a href="tema03p1.html"
+          ><img src="tema03p1.jpg" alt="kursus3"
         /></a>
 
         <div class="text1">
-          <p>
-            Har du erfaring med Photoshop? Så passer dette kursus med garanti,
-            til dit behov.
-          </p>
+          <p>BASIC UX</p>
         </div>
       </div>
 
-      <div class="div1">
-        <a href="enekursus.html"
-          ><img src="kurser/spits/02online.png" alt="kursus4"
+      <div class="div4 themes">
+        <a href="tema03p2.html"
+          ><img src="tema03p2.jpg" alt="kursus4"
         /></a>
 
         <div class="text1">
-          <p>
-            Du kan også vælge et online kursus, hvor undervisningen vil være én
-            til én.
-          </p>
+          <p>UX PITCH</p>
         </div>
+      </div>
+    
+
+    <div class="div5 themes">
+      <a href="tema04.html">
+        <img src="tema04.png" alt="kursus5" /></a>
+    
+      <div class="text1">
+      <p>ANIMATION</p>
       </div>
     </div>
 
-    <div class="row1">
-      <a href="produkter.html">
-        <button>Flere kurser</button>
-      </a>
+    <div class="div6 themes">
+      <a href="tema05p1.html">
+        <img src="tema05p2.png" alt="kursus5" /></a>
+    
+      <div class="text1">
+        <p>REDESIGN</p>
+      </div>
     </div>
 
-    <div class="container2">
-      <div class="text2">
-        <h2>Thaiberts Øvelser</h2>
+    <div class="div7 themes">
+      <a href="tema05p2.html">
+        <img src="billeder/bni.webp" alt="kursus5" /></a>
+    
+      <div class="text1">
+        <p>REDESIGN VIDEO & PHOTO</p>
+      </div>
+    </div>
+
+    <div class="div8 themes">
+      <a href="tema06.html">
+        <img src="tema06.jpg" alt="kursus6" /></a>
+    
+      <div class="text1">
+        <p>PORTFOLIO WEBSITE</p>
+      </div>
+    </div>
+
+    <div class="div9 themes">
+      <a href="tema07.html">
+        <img src="tema07.png" alt="kursus7" /></a>
+    
+      <div class="text1">
+        <p>DRINKS INDEX</p>
+      </div>
+    </div>
+
+
+    <div class="div10 themes">
+      <a href="tema08.html">
+        <img src="tema08.png" alt="kursus8" /></a>
+    
+      <div class="text1">
+        <p>THEATER GROB</p>
+      </div>
+    </div>
+
+    <div class="div11 themes">
+      <a href="extra.html">
+        <img src="ekstra.png" alt="kursus9" /></a>
+    
+      <div class="text1">
+        <p>EXTRA DESIGNS</p>
+      </div>
+    </div>
+
+  
+    </div> 
+    
+    </div>
+
+    <!-- ABOUT ME  -->
+
+    <div class="containerommig">
+      <div class="forsideommig">
+        <h2>About Daniel Vasiljevic</h2>
         <p>
-          Jeg har skabt stribe korte øvelser, der relaterer til mange
-          situationer, du skal kunne i en designproces. Kursus materialet er
-          designet til at understøtte teorierne i praksis. Derfor er der en
-          konstant vekselvirkning mellem teknik og praksis. Øvelserne får du på
-          en USB, så du har mulighed for at selvtræne. Ofte er der ekstra
-          øvelser med. Efter et kursus er det utrolig vigtigt at forankre din
-          nye viden og det sker bedst ved at bruge den!
+          Daniel Vasiljevic is an actor, photographer, videographer and writer born 
+          and raised in Copenhagen, Denmark. Here he graduated with a diploma in Acting 
+          at Copenhagen Film- and Theatre School in June 2019 and has since then been 
+          working freelance in various creative sectors. He's currently also studying 
+          Multimedia Design at KEA.
         </p>
 
-        <h2>Sådan booker du et kursus</h2>
+        <h2>Skills</h2>
 
         <ul>
-          <li>Finde det kursus der passer dig bedst.</li>
-          <li>Skriv til mig.</li>
-          <li>
-            Så ringer eller skriver jeg tilbage, med pris og vejledende agenda
-            til dit kursus.
+          <li>Photo- and Videography</li>
+          <li>Adobe Premiere Pro, Photoshop, Lightroom, Illustrator & XD</li>
+          <li>HTML, CSS & JavaScript
           </li>
           <li>
-            Sig ja, – og vi finder en kursusdag der passer i din og min
-            kalender.
+            Juggling with up to three juggling balls
           </li>
         </ul>
+
+        <div class="knapommig">
+            <button onclick="window.location.href='aboutme.html';">READ MORE</button>
+        </div>
+
       </div>
 
       <div class="sideimage">
-        <img src="billeder/bni2.webp" alt="billede1" />
+        <img src="billeder/dani.jpg" alt="billede1" />
       </div>
     </div>
 
     <footer>
-      <div class="item7">
-        <h3>GODKENDT AF:</h3>
-        <img src="./billeder/partnerskaber-bitspot.png" alt="partnerskab" />
+      <!-- <div class="partone">
+        <h3>PORTFOLIO BY<br>DANIEL VASILJEVIC
+        </h3>
       </div>
-      <div class="item8">
-        <h3>LUNDINGSGADE 10 TV</h3>
-        <h3>2100 KØBENHAVN Ø</h3>
-        <h3>TLF: 50 50 15 14</h3>
-        <h3>MAIL: kursus@bitspot.dk</h3>
-        <h3>CVR: 27104444</h3>
-      </div>
-      <div class="item9">
-        <form action="action_page.php">
-          <div class="containerfooter">
-            <h3>FÅ TIPS OG TRICKS DIREKTE I DIN INBOX</h3>
-          </div>
 
-          <div class="containerfooter" style="background-color: white">
-            <input type="text" placeholder="Navn" name="name" required />
-            <input
-              type="text"
-              placeholder="Email adresse"
-              name="mail"
-              required
-            />
-          </div>
+      <div class="parttwo">
+      <h3>Audentes Fortuna Iuvat</h3>
+      <h4>- 2022 -</h4>
+      </div> -->
 
-          <div class="containerfooter">
-            <input type="submit" value="Tilmeld" />
-          </div>
-        </form>
+
+      <div class="partthree">
+        <h3>FIND OUT MORE</h3>
+
+        <a href="https://www.facebook.com/BrokenBicyclesProductions/">
+<img class="fejs" src="billeder/fjsbk.svg" alt="fb"></a>
+
+<a href="https://www.instagram.com/vasiljev_photo/?hl=da">
+<img  src="billeder/instgrm.svg" alt="insta"></a>
+
+<a href="https://www.linkedin.com/in/daniel-vasiljevic-724b81198/">
+<img src="billeder/lnkdin.svg" alt="linked"></a>
+
+<a href="https://www.youtube.com/channel/UCrAgs0nG7urrA3m-mkgfWBQ">
+<img src="billeder/yutub.svg" alt="yutub"></a>
       </div>
+
     </footer>
 
     <script src="burger2.js"></script>

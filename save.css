@@ -1,0 +1,62 @@
+.div2 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}
+
+.div3 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}
+
+.div4 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}
+
+.div5 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}
+
+.div6 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}
+
+.div7 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}
+
+.div8 {
+  position: relative;
+  text-align: center; /* tekst i midten */
+  background-image: linear-gradient(rgba(44, 44, 44, 0.5), rgba(0, 0, 0, 0.4)),
+    url(tema02.jpg);
+  background-size: cover; /* hele billedet ses */
+  border-radius: 5%; /* runding på elementerne */
+}

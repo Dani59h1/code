@@ -1,0 +1,187 @@
+img {
+  max-width: 100%;
+}
+
+iframe {
+  display: block;
+  margin-inline: auto;
+}
+h1 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.centerbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  background-color: gray;
+  transform: scale(1.1);
+  color: whitesmoke;
+  transition: 0.2s;
+}
+
+.theme02 {
+  margin: 1rem;
+}
+
+.bgrnd {
+  background-color: black;
+  padding-top: 1rem;
+}
+
+/* h2 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+} */
+
+.theme02 p {
+  margin-bottom: 2rem;
+}
+
+.button5p1 {
+  gap: 10px;
+}
+
+.resume {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-inline: 1rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+#basicux {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-inline: 1rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    margin: 5rem;
+    font-size: 3rem;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  #basicux {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #animacije {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .theme02 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-inline: 3rem;
+  }
+
+  .me img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .text02 {
+    grid-column-start: 1;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 850px) {
+  p {
+    font-size: 1rem;
+  }
+
+  #animacije {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #bennys {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .theme02 p {
+    font-size: 1.2rem;
+    padding-inline: 2rem;
+  }
+
+  iframe {
+    min-width: 600px;
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #basicux {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #animacije {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.kolonne {
+  padding-bottom: 10rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .kolonne {
+    padding-bottom: 20rem;
+  }
+}
+
+h1 {
+  font-family: "Vesper Libre", serif;
+}
+
+.overskrift {
+  margin-top: 2rem;
+}
